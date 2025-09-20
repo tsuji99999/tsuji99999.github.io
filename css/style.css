@@ -1,0 +1,108 @@
+/* --- 基本設定 --- */
+:root {
+    --text-color: #333;
+    --bg-color: #fff;
+    --base-font-size: 16px;
+    --line-height: 1.7;
+    --link-color: #007bff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: var(--base-font-size);
+    line-height: var(--line-height);
+    margin: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+ul {
+    padding-left: 1.2em;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+/* --- レイアウト --- */
+.wrapper {
+    display: grid;
+    /* 左カラムの幅を320px, 間の隙間を40px, 右カラムは残りの幅 */
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.left-column {
+    position: sticky; /* スクロールに追従させる */
+    top: 40px;       /* 上から40pxの位置で固定 */
+    align-self: start; /* 上端に配置 */
+}
+
+/* --- 左カラムのスタイル --- */
+.profile-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin: 1em 0;
+}
+.social-links a, .contact {
+    line-height: 2.0;
+}
+.social-links .fab, .contact .fa {
+    margin-right: 0.5em;
+}
+
+/* --- 右カラムのスタイル --- */
+.project-item {
+    margin-bottom: 2em;
+}
+.btn {
+    display: inline-block;
+    background: #f0f0f0;
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.btn:hover {
+    background: #e0e0e0;
+    text-decoration: none;
+}
+
+/* --- レスポンシブ対応 (画面幅が800px以下の場合) --- */
+@media (max-width: 800px) {
+    .wrapper {
+        /* 1カラムレイアウトに変更 */
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .left-column {
+        /* 固定を解除 */
+        position: static;
+        top: auto;
+    }
+}
