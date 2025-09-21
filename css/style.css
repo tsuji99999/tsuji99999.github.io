@@ -71,8 +71,8 @@ h3 {
 
 /* --- 左カラムのスタイル --- */
 .profile-img {
-    width: 150px; /* 少し小さくしてスッキリ見せる */
-    height: 150px;
+    width: 200px; /* 少し小さくしてスッキリ見せる */
+    height: 200px;
     border-radius: 50%; /* 丸形にトリミング */
     object-fit: cover; /* 画像の比率を保ったままトリミング */
     margin: 1.5em 0;
