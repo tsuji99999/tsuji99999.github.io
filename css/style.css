@@ -5,8 +5,8 @@
     --border-color: #eeeeee; /* 薄い境界線用の色 */
     --bg-color: #ffffff;
 }
-/* --- 斜体（i, emタグ）のスタイル強制 --- */
-i, em {
+/* --- 斜体（emタグ）のスタイル強制 --- */
+em {
     font-style: italic !important;
 }
 
