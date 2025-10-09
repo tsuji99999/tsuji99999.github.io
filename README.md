@@ -6,7 +6,7 @@
 
 ## 🌐 サイト概要
 
-このリポジトリは、北海道大学 工学部 電子情報工学科に在籍する辻拓真の個人Webサイトのソースコードです。  
+このリポジトリは、北海道大学 工学部 情報エレクトロニクス学科に在籍する辻拓真の個人Webサイトのソースコードです。  
 [GitHub Pages](https://tsuji99999.github.io/) にて公開しています。
 
 ### 掲載内容
@@ -47,7 +47,7 @@ tsuji99999.github.io/
 ## 👤 作者
 
 **辻 拓真 / Takuma TSUJI**
-- 所属: 北海道大学 工学部 電子情報工学科 4年
+- 所属: 北海道大学 工学部 情報エレクトロニクス学科 4年
 - 研究室: [知能ソフトウェア研究室](https://sites.google.com/elms.hokudai.ac.jp/intelligent-software-lab/home?authuser=0)
 - X (Twitter): [@Tsujima_____](https://x.com/Tsujima_____)
 - GitHub: [@tsuji99999](https://github.com/tsuji99999)
